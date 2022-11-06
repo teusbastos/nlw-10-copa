@@ -83,6 +83,13 @@ header {
 .cards ul li strong {
   font-weight: 900;
   font-size: 36px;
-  line-height: 125%;
+  line-height: 70%;
   color: #e1e1e6;
+  padding-bottom: 28px;
+}
+
+.estadio {
+  font-style: italic;
+  font-size: 35%;
+  color: gray;
 }

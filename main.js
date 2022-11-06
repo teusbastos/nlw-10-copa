@@ -1,8 +1,8 @@
-function createGame(player1, hour, player2) {
+function createGame(player1, hour, player2, estadio) {
   return `
   <li>
     <img src="./assets/icon-${player1}.svg" alt="Bandeira ${player1}">
-    <strong>${hour}</strong>
+    <strong><span class="estadio">${estadio}<br></span>${hour}</strong>
     <img src="./assets/icon-${player2}.svg" alt="${player2}">
   </li>
 
@@ -25,8 +25,8 @@ document.querySelector("#app").innerHTML = `
     <img src="./assets/logo.svg" alt="Logo da NWL">
 </header>
 <main id="cards">
-  ${createCard("24/11", "quinta", createGame("brazil", "16:00", "serbia"))}
-  ${createCard("28/11", "segunda", createGame("brazil", "13:00", "switzerland"))}
-  ${createCard("02/12", "sexta", createGame("cameroon", "16:00", "brazil"))}
+  ${createCard("24/11", "quinta", createGame("brazil", "16:00", "serbia","Lusail Stadium"))}
+  ${createCard("28/11", "segunda", createGame("brazil", "13:00", "switzerland","Stadium 974"))}
+  ${createCard("02/12", "sexta", createGame("cameroon", "16:00", "brazil","Lusail"))}
 </main>
 `
