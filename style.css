@@ -6,6 +6,7 @@
 
 ul {
   list-style: none;
+  margin: auto 12px;
 }
 body * {
   font-family: 'Roboto', sans-serif;
@@ -19,7 +20,7 @@ body {
 
 #app {
   width: fit-content;
-  margin: 52px auto;
+  margin: 90px auto;
 }
 
 header {
@@ -29,12 +30,13 @@ header {
 
 #cards {
   display: flex;
+  height: fit-content;
   flex-direction: column;
   gap: 32px;
 }
 
 .cards {
-  padding: 32px 23px;
+  padding: 32px 30px;
   text-align: center;
   background: #1d1c19;
   border-bottom: 2px solid #f7dd43;
@@ -65,7 +67,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 270px;
+    width: auto;
 }
 
 .cards ul li {
@@ -86,10 +88,29 @@ header {
   line-height: 70%;
   color: #e1e1e6;
   padding-bottom: 28px;
+  justify-content: center;
 }
 
 .estadio {
+  
   font-style: italic;
   font-size: 35%;
   color: gray;
+}
+
+.teamName {
+  justify-content: center;
+  text-transform: capitalize;
+  color: antiquewhite;
+}
+
+.flagLeft {
+  width: 100px;
+  justify-self: start;
+}
+
+.flagRight {
+  width: 100px;
+  justify-self: end;
+  width: -5px;
 }
