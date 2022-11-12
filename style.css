@@ -9,7 +9,7 @@ ul {
   margin: auto 12px;
 }
 body * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body {
   background-color: #121214;
@@ -20,7 +20,7 @@ body {
 
 #app {
   width: fit-content;
-  margin: 90px auto;
+  margin: auto auto;
 }
 
 header {
@@ -29,14 +29,14 @@ header {
 }
 
 #cards {
-  display: flex;
-  height: fit-content;
-  flex-direction: column;
-  gap: 32px;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    gap: 20px;
 }
 
 .cards {
-  padding: 32px 30px;
+  padding: 32px 0px;
   text-align: center;
   background: #1d1c19;
   border-bottom: 2px solid #f7dd43;
@@ -63,13 +63,6 @@ header {
   text-transform: uppercase;
 }
 
-.cards ul {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: auto;
-}
-
 .cards ul li {
   display: flex;
   align-items: center;
@@ -79,7 +72,6 @@ header {
 .cards ul li + li {
   padding-top: 24px;
   border-top: 1px solid #323238;
-
 }
 
 .cards ul li strong {
@@ -92,7 +84,6 @@ header {
 }
 
 .estadio {
-  
   font-style: italic;
   font-size: 35%;
   color: gray;
@@ -106,10 +97,39 @@ header {
 
 .flagLeft {
   width: 100px;
+  height: 100px;
   justify-self: start;
 }
 
 .flagRight {
   width: 100px;
+  height: 100px;
   justify-self: end;
 }
+
+.button {
+  font-weight: 900;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid #4c248d;
+  border-radius: 6px;
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 53px;
+  color: #ffffff;
+}
+
+/* media queries */
+@media (min-width: 970px) {
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: fit-content;
+  }
+}
+
